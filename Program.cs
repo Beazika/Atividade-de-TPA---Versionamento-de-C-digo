@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 namespace Atividade_CSharp
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int x=0, menu=0;
+            int x=0, menu=0, menu2=0;
             bool sair1 = false;
             string[] chamada;
             chamada = new string[10];
@@ -35,7 +35,55 @@ namespace Atividade_CSharp
                             Console.Clear();
                         }
                     break;
-		   }
+                    
+                    case 2:
+                        Console.Write("Digite o número do aluno: \n");
+
+                        menu2 = int.Parse(Console.ReadLine());
+                        switch(menu2){
+                            case 1:
+                                Console.WriteLine($"O aluno {nomes[0]} está {chamada[0]}\n");
+                            break;
+                                
+                            case 2:
+                                Console.WriteLine($"O aluno {nomes[1]} está {chamada[1]}\n");
+                            break;
+
+                            case 3:
+                                Console.WriteLine($"O aluno {nomes[2]} está {chamada[2]}\n");
+                            break;
+
+                            case 4:
+                                Console.WriteLine($"O aluno {nomes[3]} está {chamada[3]}\n");
+                            break;
+
+                            case 5:
+                                Console.WriteLine($"O aluno {nomes[4]} está {chamada[4]}\n");
+                            break;
+
+                            case 6:
+                                Console.WriteLine($"O aluno {nomes[5]} está {chamada[5]}\n");
+                            break;
+
+                            case 7:
+                                Console.WriteLine($"O aluno {nomes[6]} está {chamada[6]}\n");
+                            break;
+
+                            case 8:
+                                Console.WriteLine($"O aluno {nomes[7]} está {chamada[7]}\n");
+                            break;
+
+                            case 9:
+                                Console.WriteLine($"O aluno {nomes[8]} está {chamada[8]}\n");
+                            break;
+                            
+                            case 10:
+                                Console.WriteLine($"O aluno {nomes[9]} está {chamada[9]}\n");
+                            break;
+
+                        }
+                    break;
+		    }
             }while(sair1 != true);
             
         }
