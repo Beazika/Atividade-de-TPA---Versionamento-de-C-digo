@@ -5,7 +5,7 @@ namespace Atividade_CSharp
     {
         static void Main(string[] args)
         {
-            int menu=0;
+            int x=0, menu=0;
             string[] chamada;
             chamada = new string[10];
             string[] presenca;
@@ -18,7 +18,22 @@ namespace Atividade_CSharp
                 Console.Write("Escolha a opção desejada: ");
                 menu = int.Parse(Console.ReadLine());
                 Console.Clear();
-                
+                switch(menu){
+                    case 1:
+                        while(x < 10){
+                        Console.WriteLine(nomes[x]+" está presente [SN]");
+                        chamada[x] = Console.ReadLine();
+                            if(chamada[x] == "S" || chamada[x] == "s"){
+                            chamada[x] = "presente";
+                            }else{
+                            chamada[x] = "ausente";
+                        
+                            }
+                            x++;
+                            Console.Clear();
+                        }
+                    break;       
+		} 
         }
     }
 }
