@@ -6,12 +6,14 @@ namespace Atividade_CSharp
         static void Main(string[] args)
         {
             int x=0, menu=0;
+            bool sair1 = false;
             string[] chamada;
             chamada = new string[10];
             string[] presenca;
             presenca = new string[10];
             string[] nomes;
             
+            do{
                 nomes = new string[10] {"[ 01 ] Antony S.", "[ 02 ] Bruce B.", "[ 03 ] Clint B.", "[ 04 ] Gamora Z.", "[ 05 ] Michele J.", "[ 06 ] Natasha R.", "[ 07 ] Nebulosa Z.", "[ 08 ] Peter P.", "[ 09 ] Stephen S.", "[ 10 ] Wanda M."};
                 Console.WriteLine("\nMenu de registro");
                 Console.WriteLine("[ 1 ] Registrar presença\n[ 2 ] Consultar presença\n[ 3 ] Lista de alunos\n[ 0 ] Sair");
@@ -32,8 +34,10 @@ namespace Atividade_CSharp
                             x++;
                             Console.Clear();
                         }
-                    break;       
-		} 
+                    break;
+		   }
+            }while(sair1 != true);
+            
         }
     }
 }
